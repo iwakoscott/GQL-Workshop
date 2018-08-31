@@ -1,10 +1,11 @@
 # GraphQL Workshop Notes
 
-## @MSFTReactor
+Hosted at @MSFTReactor in San Francisco
+Thursday, August 30th 2018
 
 ---
 
-## Requirements
+## Technology Requirements
 
 - `create-react-app`
 - Node Version 10.0
