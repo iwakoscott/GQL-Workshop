@@ -21,14 +21,19 @@ const root = {
     return axios
       .get("https://graphqlvoting.azurewebsites.net/api/score")
       .then(res => res.data);
+  },
+  incrementPoints: obj => {
+    return axios
+      .get(`https://graphqlvoting.azurewebsites.net/api/score/${obj.id}`)
+      .then(res => res.data);
   }
 };
 
 graphql(
   schema,
   `
-    query {
-      teams {
+    mutation {
+      incrementPoints(id: 2) {
         id
         name
         points
